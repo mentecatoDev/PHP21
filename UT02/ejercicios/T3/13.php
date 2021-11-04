@@ -30,8 +30,8 @@
           ?>
             <form action="13.php" method="post">
               Número <?php echo $cuentaNumeros+1; ?> <input type="number" name="n" autofocus>
-              <input type="hidden" name="cuentaNumeros" value="<?php echo $cuentaNumeros; ?>">
-              <input type="hidden" name="positivos" value="<?php echo $positivos; ?>">
+              <input type="hidden" name="cuentaNumeros" value="<?= $cuentaNumeros; ?>">
+              <input type="hidden" name="positivos" value="<?= $positivos; ?>">
               <input type="submit" value="Aceptar">
             </form>
           <?php

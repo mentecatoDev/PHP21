@@ -17,9 +17,8 @@
           $numeroSecreto = 1234;
 
           if ($numeroIntroducido == $numeroSecreto) {
-            echo "La caja fuerte se ha abierto.";
-            echo '<img src="https://m.gifmania.com/Gif-Animados-Objetos/Imagenes-Dinero/Cajas-Fuertes/Caja-Fuerte-Lingotes-Oro-81890.gif"  alt="">';
-          } elseif ($oportunidades == 0) {
+            echo "La caja fuerte se ha abierto.<br>";
+            echo '<img src="http://www.imagenesanimadas.net/Economia/Cajas-fuertes/Caja-fuerte-03.gif"';
             echo "Lo siento, has agotado todas tus oportunidades. La caja fuerte permanecerá cerrada.";
           } else {
             echo "Te quedan ", $oportunidades, " oportunidades para abrir la caja fuerte.<br>";

@@ -15,8 +15,12 @@
         } else {
           $n = $_POST['n'];
           $total = $_POST['total'];
-          $cuentaNumeros = $_POST['cuentaNumeros'];
-        }
+          if ($n <= 0){
+            $cuentaNumeros = $_POST['cuentaNumeros'] - 1;
+          } else {
+            $cuentaNumeros = $_POST['cuentaNumeros'];
+          }
+      }
         if ($n >= 0) {
             $total += $n;
             $cuentaNumeros++;
@@ -29,9 +33,14 @@
             </form>
           <?php
           } else {
-          ?>
-            <br><br>La media de los números introducidos es <?php echo $total / ($cuentaNumeros - 1); ?>
+          
+            if ($cuentaNumeros == 0){
+              echo '<br><br>No hay números suficientes';
+            }else{?>
+            <br><br>La media de los números introducidos es <?php echo $total / $cuentaNumeros; ?>
+            <?php } ?>
             <br><br>
+            
             <a href="10.php">>> Volver</a>
           <?php
           }
