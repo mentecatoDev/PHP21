@@ -34,8 +34,3 @@
         <a href="25.php">>> Volver</a>
   </body>
 </html>
-
-
-numero = 0
-
-volteado = 320 + 1 = 321

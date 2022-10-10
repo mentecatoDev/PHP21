@@ -23,6 +23,8 @@
 
   <h2> Movimiento de un alfil</h2>
   <?php
+  if isset(GET['posicion']){
+
     // Recoge la posición del alfil
     $posicion = $_GET['posicion'];
     $x = ord(substr($posicion, 0, 1)) - ord('a');
@@ -68,7 +70,7 @@
       <td></td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td></td>
     </tr>
     </table>
-
+  <?php }else{ ?>
     <br>
     Introduzca las coordenadas del alfil (p. ej. e4)
     <br>
@@ -76,6 +78,6 @@
       <input type="text" name="posicion" autofocus="" required=""><br>
       <input type="submit" value="Aceptar">
     </form>
-
+  <?php } ?>
   </body>
 </html>

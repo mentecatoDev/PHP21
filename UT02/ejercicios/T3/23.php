@@ -17,12 +17,12 @@
             $numeroDeElementos = $_POST['numeroDeElementos'];
           }
 
-          if ($suma < 10000) {
+          if ($suma <= 10000) {
             $suma += $n;
             $numeroDeElementos++;
           }
 
-          if ((!isset($_POST['n'])) || ($suma < 10000)) {
+          if ((!isset($_POST['n'])) || ($suma <= 10000)) {
           ?>
             Introduzca un número. El programa seguirá pidiendo números mientras la suma de ellos sea inferior a 10000.<br>
             <form action="23.php" method="post">
@@ -34,7 +34,7 @@
           <?php
           }
 
-          if ($suma >= 10000) {
+          if ($suma > 10000) {
             echo "Ha introducido un total de $numeroDeElementos números.<br>";
             echo "La suma total es $suma<br>";
             echo "La media es ".($suma/$numeroDeElementos);

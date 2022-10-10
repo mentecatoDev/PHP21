@@ -14,19 +14,19 @@
               break;
 
             case "martes":
-              echo "Desarrollo en Entorno Servidor";
+              echo "Desarrollo de Interfaces Web";
               break;
 
             case "miércoles":
-              echo "Libre Configuración";
+              echo "Desarrollo en Entorno Servidor";
               break;
 
             case "jueves":
-              echo "Despliegue de Aplicaciones";
+              echo "Desarrollo en Entorno Servidor";
               break;
 
             case "viernes":
-              echo "Diseño de Interfaces Web";
+              echo "Despliegue de Aplicaciones Web";
               break;
 
             case "sábado":

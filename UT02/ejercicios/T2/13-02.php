@@ -32,7 +32,7 @@
             $b = $aux;
           }
 
-          echo "Los números introducidos ordenados de menor a mayor son $a, $b y $c.";
+          echo "Los números introducidos ordenados de mayor a menor son $a, $b y $c.";
 
         ?>
         <br><br>
